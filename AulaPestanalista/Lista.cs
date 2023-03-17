@@ -99,5 +99,19 @@ namespace AulaPestanalista
                 }
             }
         }
+
+        public void Remove(Item value)
+        {
+            Item aux = Begin;
+            while (aux != null) 
+            {
+                if(aux.next == value)
+                {
+                    aux.next = value.next;
+                    break;
+                }
+                aux = aux.next;
+            }
+        }
     }
 }
