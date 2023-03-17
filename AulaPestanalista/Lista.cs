@@ -48,8 +48,22 @@ namespace AulaPestanalista
         }
         public void InsertMid(Item value)
         {
-            value.next = Begin.next;
-            Begin.next = value;
+            Item aux = Begin;
+            Item aux2 = aux.next;
+            while (aux2 != null) 
+            {
+                if (value.value <= aux2.value)
+                {
+                    value.next = aux2;
+                    aux.next = value;
+                    return;
+                }
+                else
+                {
+                    aux = aux2;
+                    aux2 = aux.next;
+                }
+            }
         }
 
         public void InsertLast(Item value)
