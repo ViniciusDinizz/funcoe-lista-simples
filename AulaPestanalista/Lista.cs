@@ -61,7 +61,7 @@ namespace AulaPestanalista
                 else
                 {
                     aux = aux2;
-                    aux2 = aux.next;
+                    aux2 = aux2.next;
                 }
             }
         }
@@ -108,7 +108,7 @@ namespace AulaPestanalista
                 Item aux = Begin;
                 while (aux != null)
                 {
-                    Console.Write($" {aux} ");
+                    Console.WriteLine(aux.ToString());
                     aux = aux.next;
                 }
             }

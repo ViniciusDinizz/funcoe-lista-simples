@@ -12,11 +12,11 @@ internal class Program
         list.Insert(item);
         list.Print();
 
-        item = new(25);
-        list.Insert(item);
+        Item item2 = new(25);
+        list.Insert(item2);
         list.Print();
 
-        item = new(40);
+        /*item = new(40);
         list.Insert(item);
         list.Print();
 
@@ -30,7 +30,7 @@ internal class Program
 
         item = new(17);
         list.Insert(item);
-        list.Print();
+        list.Print();*/
 
     }
 }

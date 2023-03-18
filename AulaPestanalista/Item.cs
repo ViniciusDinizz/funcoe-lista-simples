@@ -17,5 +17,10 @@ namespace AulaPestanalista
             next = null;
         }
 
+        public override string ToString()
+        {
+            return $" {this.value} ";
+        }
+
     }
 }
